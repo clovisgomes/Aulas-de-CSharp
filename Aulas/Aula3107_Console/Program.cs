@@ -11,7 +11,7 @@ namespace Aula3107_Console
         {
             Console.WriteLine("Hello World!");
 
-            Console.WriteLine("\n");
+            Console.WriteLine("\n\n Escolha a operação: 1");
             op = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite 1° número:");
@@ -27,7 +27,8 @@ namespace Aula3107_Console
 
         static int imprimirSoma (int n1, int n2)
         {
-            int res = 
+            int res = n1 + n2;
+            return res;
         }
     }
 }
