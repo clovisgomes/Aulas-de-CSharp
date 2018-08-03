@@ -9,27 +9,20 @@ namespace Aula3107_Console
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Carro car = new Carro();
+            car.Modelo = "Ferrari";
+            car.Acelerar();
 
-            Console.WriteLine("\n\n Escolha a operação: 1");
-            op = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite 1° número:");
-            n1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Você digitou: " +n1);
-
-            Console.WriteLine("Digite 2° número:");
-            n2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Você digitou: " +n2);
-
+            Console.WriteLine("Velocidade: " + car.Velocidade);
             Console.ReadKey();
+
         }
 
-        static int imprimirSoma (int n1, int n2)
-        {
-            int res = n1 + n2;
-            return res;
-        }
+        static void ExecutaTesteMotor(IMotorizado vec)
+
+
     }
+
+
 }
 
