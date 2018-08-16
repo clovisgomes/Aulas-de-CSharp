@@ -10,9 +10,9 @@ namespace Aula3107_Console
         static void Main(string[] args)
         {
             Carro car = new Carro();
-            car.Modelo = "Ferrari";
+            car.Modelo = "Ferrkari";
             car.Acelerar();
-
+            
             Console.WriteLine("Velocidade: " + car.Velocidade);
             Console.ReadKey();
 
