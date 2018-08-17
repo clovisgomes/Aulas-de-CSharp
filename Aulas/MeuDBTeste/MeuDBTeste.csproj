@@ -59,6 +59,7 @@
     <Compile Include="Cliente.cs">
       <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controller\PersonController.cs" />
     <Compile Include="Endereco.cs">
       <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
