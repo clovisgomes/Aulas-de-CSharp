@@ -18,7 +18,7 @@ namespace MeuDBTeste.Controller
         {
             MeuDBContainer contexto = new MeuDBContainer();
             return contexto.Person.ToList();
-            //dsa
+            
         }
         Person BuscarPorID(int id)
         {
@@ -36,6 +36,30 @@ namespace MeuDBTeste.Controller
                 contexto.Person.Remove(pExcluir);
                 contexto.SaveChanges();
             }
+        }
+
+        void Editar(int id, Person novosDadosPerson)
+        {
+            Person personAntigo = BuscarPorID(id);
+
+            if(personAntigo != null)
+            {
+                personAntigo.FirstName = novosDadosPerson.FirstName;
+                personAntigo.LastName = novosDadosPerson.LasttName;
+                personAntigo.Title = novosDadosPerson.Title;
+
+                MeuDBContainer contexto = new MeuDBContainer();
+
+                contexto.Entry(personAntigo).State = System.Data.Entity.EntityState.Modified;
+
+                contexto.SaveChanges();
+            }
+        }
+
+        List<Person> PersquisarPorFirstName(string firstName)
+        {
+            //LINQ
+
         }
     }
 }
