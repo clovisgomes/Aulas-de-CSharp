@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MeuDBTeste.Controller
+namespace AWControllers.Controllers
 {
     class PersonController
     {
-        void Inserir(Person p)
+        void Inserir (Person p)
         {
-            MeuDBContainer contexto = new MeuDBContainer();
+            ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
             contexto.Person.Add(p);
             contexto.SaveChanges();
         }
         List<Person> ListarTodosPerson()
         {
-            MeuDBContainer contexto = new MeuDBContainer();
+            ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
             return contexto.Person.ToList();
-            
         }
+
         Person BuscarPorID(int id)
         {
-            MeuDBContainer contexto = new MeuDBContainer();
+            ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
             return contexto.Person.Find(id);
         }
 
@@ -30,9 +30,9 @@ namespace MeuDBTeste.Controller
         {
             Person pExcluir = BuscarPorID(id);
 
-            if(pExcluir != null)
+            if (pExcluir != null)
             {
-                MeuDBContainer contexto = new MeuDBContainer();
+                ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
                 contexto.Person.Remove(pExcluir);
                 contexto.SaveChanges();
             }
@@ -42,13 +42,13 @@ namespace MeuDBTeste.Controller
         {
             Person personAntigo = BuscarPorID(id);
 
-            if(personAntigo != null)
+            if (personAntigo != null)
             {
                 personAntigo.FirstName = novosDadosPerson.FirstName;
                 personAntigo.LastName = novosDadosPerson.LasttName;
                 personAntigo.Title = novosDadosPerson.Title;
 
-                MeuDBContainer contexto = new MeuDBContainer();
+                ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
 
                 contexto.Entry(personAntigo).State = System.Data.Entity.EntityState.Modified;
 
@@ -58,10 +58,12 @@ namespace MeuDBTeste.Controller
 
         List<Person> PersquisarPorFirstName(string firstName)
         {
-            MeuDBContainer contexto = new MeuDBContainer();
+            ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
             //LINQ
             //var lista = from p in contexto.Person
-            //          select p; //SELECT * FROM Person            
+            //          select p; //SELECT * FROM Person     
+            //comentario
+            ///comentario2
 
             var lista = from p in contexto.Person
                         where p.FirstName == firstName
@@ -69,5 +71,6 @@ namespace MeuDBTeste.Controller
 
             return lista.ToList();
         }
+
     }
 }

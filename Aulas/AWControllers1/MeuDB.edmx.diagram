@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4d1df567c24f4f3cb85f9d895f929610" Name="Diagram1">
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Address" Width="1.5" PointX="10.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.AddressType" Width="1.5" PointX="10.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.BusinessEntity" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.BusinessEntityAddress" Width="1.5" PointX="13" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.BusinessEntityContact" Width="1.5" PointX="15.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ContactType" Width="1.5" PointX="13" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.CountryRegion" Width="1.5" PointX="6.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.EmailAddress" Width="1.5" PointX="15.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Password" Width="1.5" PointX="15.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Person" Width="1.5" PointX="13" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.PersonPhone" Width="1.5" PointX="18.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.PhoneNumberType" Width="1.5" PointX="16" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.StateProvince" Width="1.5" PointX="8.5" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.BillOfMaterials" Width="1.5" PointX="8.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Culture" Width="1.5" PointX="3.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Illustration" Width="1.5" PointX="3.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Location" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.Product" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductCategory" Width="1.5" PointX="1.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductCostHistory" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductDescription" Width="1.5" PointX="3.75" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductInventory" Width="1.5" PointX="8.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductListPriceHistory" Width="1.5" PointX="5.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductModel" Width="1.5" PointX="0.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductModelIllustration" Width="1.5" PointX="6" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductModelProductDescriptionCulture" Width="1.5" PointX="6" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductPhoto" Width="1.5" PointX="6" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductProductPhoto" Width="1.5" PointX="8.25" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductReview" Width="1.5" PointX="5.25" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductSubcategory" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ScrapReason" Width="1.5" PointX="9" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.TransactionHistory" Width="1.5" PointX="5.25" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.TransactionHistoryArchive" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.UnitMeasure" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.WorkOrder" Width="1.5" PointX="11.25" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.WorkOrderRouting" Width="1.5" PointX="13.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClovisApplicationTestingModel.ProductDocument" Width="1.5" PointX="5.25" PointY="40.75" IsExpanded="true" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Address_StateProvince_StateProvinceID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BusinessEntityAddress_Address_AddressID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BusinessEntityAddress_AddressType_AddressTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Person_BusinessEntity_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BusinessEntityContact_ContactType_ContactTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BusinessEntityContact_Person_PersonID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_StateProvince_CountryRegion_CountryRegionCode" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_EmailAddress_Person_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Password_Person_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_PersonPhone_Person_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BillOfMaterials_Product_ComponentID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BillOfMaterials_Product_ProductAssemblyID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_BillOfMaterials_UnitMeasure_UnitMeasureCode" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductModelProductDescriptionCulture_Culture_CultureID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductModelIllustration_Illustration_IllustrationID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductInventory_Location_LocationID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_WorkOrderRouting_Location_LocationID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Product_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Product_ProductSubcategory_ProductSubcategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Product_UnitMeasure_SizeUnitMeasureCode" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_Product_UnitMeasure_WeightUnitMeasureCode" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductCostHistory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductDocument_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductInventory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductListPriceHistory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductProductPhoto_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductReview_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_TransactionHistory_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_WorkOrder_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductSubcategory_ProductCategory_ProductCategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductModelProductDescriptionCulture_ProductDescription_ProductDescriptionID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductModelIllustration_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductModelProductDescriptionCulture_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_ProductProductPhoto_ProductPhoto_ProductPhotoID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_WorkOrder_ScrapReason_ScrapReasonID" ManuallyRouted="false" />
+        <AssociationConnector Association="ClovisApplicationTestingModel.FK_WorkOrderRouting_WorkOrder_WorkOrderID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

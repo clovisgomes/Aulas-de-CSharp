@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FFF3627C-7C27-42E1-BCF4-A6FDC69D4111}</ProjectGuid>
+    <ProjectGuid>{C5F69535-64F3-4CDC-8994-8E8EBE3BFFC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MeuDBTeste</RootNamespace>
-    <AssemblyName>MeuDBTeste</AssemblyName>
+    <RootNamespace>AWControllers1</RootNamespace>
+    <AssemblyName>AWControllers1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,17 +50,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AddressType.cs">
-      <DependentUpon>Modelos.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Cliente.cs">
       <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controller\PersonController.cs" />
-    <Compile Include="Endereco.cs">
+    <Compile Include="AddressType.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BillOfMaterials.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessEntity.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessEntityAddress.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessEntityContact.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ContactType.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PersonalController.cs" />
+    <Compile Include="CountryRegion.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Culture.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="EmailAddress.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Illustration.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Location.cs">
       <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
     <Compile Include="MeuDB.Context.cs">
@@ -78,72 +103,108 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MeuDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Modelos.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Modelos.Context.tt</DependentUpon>
+    <Compile Include="Password.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelos.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Modelos.tt</DependentUpon>
+    <Compile Include="Person.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelos.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Modelos.edmx</DependentUpon>
+    <Compile Include="PersonPhone.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="ProductController.cs" />
+    <Compile Include="PhoneNumberType.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCostHistory.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDescription.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDocument.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductInventory.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductListPriceHistory.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductModel.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductModelIllustration.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductModelProductDescriptionCulture.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPhoto.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductProductPhoto.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductReview.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSubcategory.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScrapReason.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StateProvince.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHistory.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionHistoryArchive.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitMeasure.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderRouting.cs">
+      <DependentUpon>MeuDB.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <EntityDeploy Include="MeuDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MeuDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
     <None Include="MeuDB.edmx.diagram">
       <DependentUpon>MeuDB.edmx</DependentUpon>
-    </None>
-    <EntityDeploy Include="Modelos.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Modelos.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Modelos.edmx.diagram">
-      <DependentUpon>Modelos.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MeuDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MeuDB.Context.cs</LastGenOutput>
       <DependentUpon>MeuDB.edmx</DependentUpon>
+      <LastGenOutput>MeuDB.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="MeuDB.edmx.sql" />
     <Content Include="MeuDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MeuDB.cs</LastGenOutput>
       <DependentUpon>MeuDB.edmx</DependentUpon>
-    </Content>
-    <Content Include="Modelos.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Modelos.edmx</DependentUpon>
-      <LastGenOutput>Modelos.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Modelos.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Modelos.edmx</DependentUpon>
-      <LastGenOutput>Modelos.cs</LastGenOutput>
+      <LastGenOutput>MeuDB.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
