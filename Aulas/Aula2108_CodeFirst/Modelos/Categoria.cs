@@ -13,9 +13,15 @@ namespace Aula2108_CodeFirst.Modelos
         [Key]
         public int CategoriaID { get; set; }
 
+        [Required]
+        [StringLength(30)]
         public string Nome { get; set; }
 
         public string Descricao { get; set; }
+
+        //Relacionamento Categoria <--> Produto
+        //1Categoria para muitos produtos
+        public ICollection<Produto> _Produtos { get; set; }
 
 
     }
