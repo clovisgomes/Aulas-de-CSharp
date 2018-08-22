@@ -45,7 +45,7 @@ namespace AWControllers.Controllers
             if (personAntigo != null)
             {
                 personAntigo.FirstName = novosDadosPerson.FirstName;
-                personAntigo.LastName = novosDadosPerson.LasttName;
+                personAntigo.LastName = novosDadosPerson.LastName;
                 personAntigo.Title = novosDadosPerson.Title;
 
                 ClovisApplicationTestingEntities contexto = new ClovisApplicationTestingEntities();
